@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="223dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/expressao"
+                style="@style/teste"
+                android:layout_width="match_parent"
+                android:layout_height="163dp"
+                android:layout_marginEnd="10dp"
+                android:ellipsize="start"
+                android:gravity="end|center"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/resultado"
+                style="@style/teste"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_marginEnd="10dp"
+                android:ellipsize="end"
+                android:gravity="end|center"
+                android:maxLines="1"
+                android:text=""
+                android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/limpar"
+            style="@style/operadores_botao"
+            android:text="C"/>
+
+        <TextView
+
+            android:id="@+id/abreParentese"
+            style="@style/operadores_botao"
+            android:text="("/>
+
+        <TextView
+            android:id="@+id/fechaParentese"
+            style="@style/operadores_botao"
+            android:text=")" />
+
+        <TextView
+
+            android:id="@+id/divisao"
+            style="@style/operadores_botao"
+            android:text="/"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/numero7"
+            style="@style/Numeros_botoes"
+            android:text="7" />
+        <TextView
+            android:id="@+id/numero8"
+            style="@style/Numeros_botoes"
+            android:text="8" />
+        <TextView
+            android:id="@+id/numero9"
+            style="@style/Numeros_botoes"
+            android:text="9" />
+        <TextView
+            android:id="@+id/multiplicacao"
+            style="@style/operadores_botao"
+            android:text="x" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/numero4"
+            style="@style/Numeros_botoes"
+            android:text="4" />
+        <TextView
+            android:id="@+id/numero5"
+            style="@style/Numeros_botoes"
+            android:text="5" />
+        <TextView
+            android:id="@+id/numero6"
+            style="@style/Numeros_botoes"
+            android:text="6" />
+        <TextView
+            android:id="@+id/subtracao"
+            style="@style/operadores_botao"
+            android:text="-" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/numero1"
+            style="@style/Numeros_botoes"
+            android:text="1" />
+        <TextView
+            android:id="@+id/numero2"
+            style="@style/Numeros_botoes"
+            android:text="2" />
+        <TextView
+            android:id="@+id/numero3"
+            style="@style/Numeros_botoes"
+            android:text="3" />
+        <TextView
+            android:id="@+id/soma"
+            style="@style/operadores_botao"
+            android:text="+" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/ponto"
+            style="@style/Numeros_botoes"
+            android:text="." />
+        <TextView
+            android:id="@+id/numero0"
+            style="@style/Numeros_botoes"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/apagar"
+            style="@style/botao_apagar"
+            android:scaleType="center"/>
+
+        <TextView
+            android:id="@+id/igual"
+            style="@style/operadores_botao"
+            android:text="=" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
